@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+        <form action="login.jsp" method="post"> 
+            <div class="login">
+                <h1>Login</h1>
+                <div class="input-type">
+                    <input type="number" placeholder="MobileNo" name="mobileNo" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-type">
+                    <input type="password" placeholder="Password" name="password"  required>
+                    <i class='bx bxs-lock-alt' ></i>
+                </div>
+                <div class="remember">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn"><input type="submit" value="login"></button>
+                <div class="Register">
+                    <p>Don't have an account?<a href="SignUp.html" target="_blank">Register</a></p>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

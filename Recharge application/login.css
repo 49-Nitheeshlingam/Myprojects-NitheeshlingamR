@@ -1,0 +1,144 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+        Created on : 04-Apr-2024, 11:45:31 am
+    Author     : DELL
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+.mobile-icon {
+    font-size: 15px; /* Adjust size as needed */
+    color: #fff; /* Adjust color as needed */
+}
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family:"poppins",sans-serif;
+}
+body{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-image:linear-gradient(45deg,#3e32a8,#e310c7);;
+}
+
+
+.login{
+    width:420px;
+    background-color:transparent;
+    color:#fff;
+    border-radius:10px;
+    padding: 30px 40px;
+    background-position: center;
+    backdrop-filter: blur(20px);
+    border:3px solid rgba(255,255,255,.2);
+    box-shadow: 0px 0px 10px rgba(255,255,255,.2);
+}
+
+.login h1{
+    font-size: 36px;
+    text-align: center;
+}
+.input-type{
+    margin: 30px 0px;
+    width:100%;
+    height: 50px;
+    position: relative;
+
+}
+.input-type input{
+    width:100%;
+    height: 100%;
+    border: 2px solid rgba(255,255,255,.2);
+    border-radius: 40px;
+    background: transparent;
+    font-size: 16px;
+    color: #fff;
+    outline: none;
+    padding:20px;
+}
+.input-type input::placeholder{
+    color:white;
+}
+
+
+
+.input-type i{
+    position:absolute;
+    right:20px;
+    top:50%;
+    font-size: 20px;
+}
+.login .remember {
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+    font-size: 14.5px;
+}
+.remember label input{
+    accent-color: #fff;
+    margin-right:3px;
+}
+.login .remember a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember a:hover{
+    text-decoration: underline;
+}
+.login .btn {
+    width:100%;
+    height:45px;
+    border-radius:40px;
+    border:none;
+    outline:none;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.1);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color:white;
+    background-color: blue;
+}
+
+.login .btn input[type="submit"] {
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color:white;
+    background-color: blue;
+    border:none;
+}
+.login .btn input[type="submit"]:hover{
+    color:white;
+    background-color: black;
+}
+
+.login .btn:hover{
+    color:white;
+    background-color: black;
+}
+.Register{
+    text-align:center;
+    margin-top: 20px;
+}
+.Register p a{
+
+    font-weight: 600;
+    color:white;
+    text-decoration: none;
+}
+
+.Register a:hover{
+    text-decoration: underline;
+}
+
+
+
+

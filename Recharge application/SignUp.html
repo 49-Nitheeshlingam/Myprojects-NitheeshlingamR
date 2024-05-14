@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SignUp</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+        <form action="signup.jsp" method="post">
+        <div class="login">
+            <h1>SignUp</h1>
+            <div class="input-type">
+                <input type="name" placeholder="Enter your name" name="name" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-type">
+                <input type="text" placeholder="MobileNo" name="mobileno" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-type">
+                <input type="password" placeholder="Password" name="password" required>
+                <i class='bx bxs-lock-alt' ></i>
+            </div>
+            <div class="input-type">
+                <input type="password" placeholder="Conifrm Password" name="confirmpassword" required>
+                <i class='bx bxs-lock-alt' ></i>
+            </div>
+            <div class="remember">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <button type="submit" class="btn"><input type="submit" value="SignUp"></button>
+        </div>
+        </form>
+    </body>
+</html>
