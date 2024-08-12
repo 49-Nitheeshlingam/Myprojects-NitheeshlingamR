@@ -1,0 +1,378 @@
+<!Doctype html>
+<html class="no-js" lang="en">
+
+    <head>
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+        
+        <!-- title of site -->
+        <title>VenueVista</title>
+
+        <!-- For favicon png -->
+		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
+       
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+        <!--linear icon css-->
+		<link rel="stylesheet" href="assets/css/linearicons.css">
+
+		<!--animate.css-->
+        <link rel="stylesheet" href="assets/css/animate.css">
+
+		<!--flaticon.css-->
+        <link rel="stylesheet" href="assets/css/flaticon.css">
+
+		<!--slick.css-->
+        <link rel="stylesheet" href="assets/css/slick.css">
+		<link rel="stylesheet" href="assets/css/slick-theme.css">
+		
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
+        
+        <!--style.css-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        
+        <!--responsive.css-->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		
+        <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+	<body>
+        <!-- top-area Start -->
+		<section class="top-area">
+			<div class="header-area">
+				<!-- Start Navigation -->
+			    <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"  data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+
+			        <div class="container">
+
+			            <!-- Start Header Navigation -->
+			            <div class="navbar-header">
+			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+			                    <i class="fa fa-bars"></i>
+			                </button>
+			                <a class="navbar-brand" href="index.html">Venue<span>vista</span></a>
+
+			            </div><!--/.navbar-header-->
+			            <!-- End Header Navigation -->
+
+			            <!-- Collect the nav links, forms, and other content for toggling -->
+			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+			                    <li><a href="index.html">home</a></li>
+			                    <li><a href="explore.html">explore</a></li>
+			                    <li><a href="Blog.html">blog</a></li>
+			                    <li><a href="Login.html">Login</a></li>
+			                </ul><!--/.nav -->
+			            </div><!-- /.navbar-collapse -->
+			        </div><!--/.container-->
+			    </nav><!--/nav-->
+			    <!-- End Navigation -->
+			</div><!--/.header-area-->
+		    <div class="clearfix"></div>
+
+		</section><!-- /.top-area-->
+		<!-- top-area End -->
+
+		<!--welcome-hero start -->
+		<section id="home" class="welcome-hero">
+			<div class="container">
+				<div class="welcome-hero-txt">
+					<h2>THE ULTIMATE CHOICE FOR DISCOVERY<br>
+						AND ADVENTURE</h2>
+					<p>
+						Find Best Place, Restaurant, Hotel, HealthCare and many more think in just One click 
+					</p>
+				</div>
+				<div class="welcome-hero-serch-box">
+					<div class="welcome-hero-form">
+						<div class="single-welcome-hero-form">
+							<h3>What?</h3>
+							<form id="searchForm">
+								<input type="text" id="whatInput" placeholder="Ex: place, restaurant, Healthcare, CarRent" />
+							</form>
+							<div class="welcome-hero-form-icon">
+								<i class="flaticon-list-with-dots"></i>
+							</div>
+						</div>
+						<div class="single-welcome-hero-form">
+							<h3>Location</h3>
+							<form action="index.html">
+								<input type="text" placeholder="Ex: london, newyork, rome" />
+							</form>
+							<div class="welcome-hero-form-icon">
+								<i class="flaticon-gps-fixed-indicator"></i>
+							</div>
+						</div>
+					</div>
+					<div class="welcome-hero-serch">
+						<button class="welcome-hero-btn" onclick="handleSearch()">
+							Search <i data-feather="search"></i>
+						</button>
+					</div>
+				</div>
+				
+				<script>
+					function handleSearch() {
+						const input = document.getElementById('whatInput').value.trim().toLowerCase();
+						let url = '';
+				
+						switch (input) {
+							case 'place':
+								url = 'Places/places.html';
+								break;
+							case 'restaurant':
+								url = 'Hotel/Hotel.html';
+								break;
+							case 'carrent':
+								url = 'CarRent/CarRent.html';
+								break;
+							case 'healthcare':
+								url = 'HealthCare/HealthCare.html';
+								break;
+							default:
+								alert('Please enter a valid category: place, restaurant, carRent, or healthCare.');
+								return;
+						}
+				
+						window.location.href = url;
+					}
+				</script>
+				
+			</div>
+
+		</section><!--/.welcome-hero-->
+		<!--welcome-hero end -->
+
+		<!--list-topics start -->
+		<section id="list-topics" class="list-topics">
+			<div class="container">
+				<div class="list-topics-content">
+					<ul>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="flaticon-restaurant"></i>
+								</div>
+								<h2><a href="Places/Places.html">Places</a></h2>
+								<p>150 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="flaticon-travel"></i>
+								</div>
+								<h2><a href="#">destination</a></h2>
+								<p>214 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="flaticon-building"></i>
+								</div>
+								<h2><a href="Hotel/Hotel.html">hotels</a></h2>
+								<p>185 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="flaticon-pills"></i>
+								</div>
+								<h2><a href="HealthCare/HealthCare.html">healthcare</a></h2>
+								<p>200 listings</p>
+							</div>
+						</li>
+						<li>
+							<div class="single-list-topics-content">
+								<div class="single-list-topics-icon">
+									<i class="flaticon-transport"></i>
+								</div>
+								<h2><a href="CarRent/CarRent.html">CarRent</a></h2>
+								<p>120 listings</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div><!--/.container-->
+
+		</section><!--/.list-topics-->
+		<!--list-topics end-->
+		
+		<!-- work start -->
+		<section id="works" class="works">
+			<div class="container">
+				<div class="section-header">
+					<h2>How It Works</h2>
+					<p>Learn more about how our website works</p>
+				</div><!--/.section-header-->
+				<div class="works-content">
+					<div class="row">
+						<div class="col-md-4 col-sm-6">
+							<div class="single-how-works">
+								<div class="single-how-works-icon">
+									<i class="flaticon-lightbulb-idea"></i>
+								</div>
+								<h2><a href="#">Choose <span> What to</span> Do</a></h2>
+								<p id="choose-short">
+									Discover countless activities and experiences that suit your interests. Whether you’re looking for adventure, relaxation, or cultural immersion, we have something for everyone.
+								</p>
+								<p id="choose-more" style="display:none;">
+									Our platform offers detailed descriptions, user reviews, and ratings to help you make an informed decision. Easily filter by location, type of activity, and date to find the perfect match for your next outing. Start planning your dream experience today with VenueVista.
+								</p>
+								<button class="welcome-hero-btn how-work-btn" onclick="toggleContent('choose')">Read More</button>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-how-works">
+								<div class="single-how-works-icon">
+									<i class="flaticon-networking"></i>
+								</div>
+								<h2><a href="#">Find <span> What You Want</span></a></h2>
+								<p id="find-short">
+									Use our intuitive search tools to find the perfect venues,places,hotels, and events. Our comprehensive listings make it easy to locate exactly what you’re looking for.
+								</p>
+								<p id="find-more" style="display:none;">
+									With advanced search filters, you can narrow down options based on your specific preferences. From cozy cafes to grand banquet halls, VenueVista covers a wide range of venues to cater to your needs. Our platform ensures that you have all the information necessary to choose the best place for your event.
+								</p>
+								<button class="welcome-hero-btn how-work-btn" onclick="toggleContent('find')">Read More</button>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-how-works">
+								<div class="single-how-works-icon">
+									<i class="flaticon-location-on-road"></i>
+								</div>
+								<h2><a href="#">Explore <span> Amazing</span> Places</a></h2>
+								<p id="explore-short">
+									Venture out and explore the best places around you. Our curated lists and recommendations help you discover hidden gems and popular spots.
+								</p>
+								<p id="explore-more" style="display:none;">
+									VenueVista provides detailed guides and user feedback to enhance your exploration experience. Learn about the history, features, and highlights of each location. Whether you're planning a weekend getaway or a special event, we make it easy for you to find the perfect setting.
+								</p>
+								<button class="welcome-hero-btn how-work-btn" onclick="toggleContent('explore')">Read More</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!--/.container-->
+		</section><!--/.works-->
+		<!--works end -->
+		
+		<script>
+			function toggleContent(section) {
+				const shortContent = document.getElementById(`${section}-short`);
+				const moreContent = document.getElementById(`${section}-more`);
+				const button = shortContent.nextElementSibling.nextElementSibling;
+		
+				if (moreContent.style.display === "none") {
+					moreContent.style.display = "block";
+					button.innerText = "Read Less";
+				} else {
+					moreContent.style.display = "none";
+					button.innerText = "Read More";
+				}
+			}
+		</script>
+
+		<!--footer start-->
+		<footer id="footer"  class="footer">
+			<div class="container">
+				<div class="footer-menu">
+		           	<div class="row">
+			           	<div class="col-sm-3">
+			           		 <div class="navbar-header">
+				                <a class="navbar-brand" href="index.html">Venue<span>Vista</span></a>
+				            </div><!--/.navbar-header-->
+			           	</div>
+			           	<div class="col-sm-9">
+			           		<ul class="footer-menu-item">
+                                <li><a href="index.html">home</a></li>
+			                    <li><a href="explore.html">explore</a></li>
+			                    <li><a href="Blog.html">blog</a></li>
+			                </ul><!--/.nav -->
+			           	</div>
+		           </div>
+				</div>
+				<div class="hm-footer-copyright">
+					<div class="row">
+						<div class="col-sm-5">
+							<p>
+								&copy;copyright.designed and developed by Nitheeshlingam
+							</p><!--/p-->
+						</div>
+						<div class="col-sm-7">
+							<div class="footer-social">
+								<span><i class="fa fa-phone"> +91 76958 34209</i></span>
+								<a href="#"><i class="fa fa-facebook"></i></a>	
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-linkedin"></i></a>
+								<a href="#"><i class="fa fa-google-plus"></i></a>
+							</div>
+						</div>
+					</div>
+					
+				</div><!--/.hm-footer-copyright-->
+			</div><!--/.container-->
+
+			<div id="scroll-Top">
+				<div class="return-to-top">
+					<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+				</div>
+				
+			</div><!--/.scroll-Top-->
+			
+        </footer><!--/.footer-->
+		<!--footer end-->
+		
+		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+		<script src="assets/js/jquery.js"></script>
+        
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!--bootstrap.min.js-->
+        <script src="assets/js/bootstrap.min.js"></script>
+		
+		<!-- bootsnav js -->
+		<script src="assets/js/bootsnav.js"></script>
+
+        <!--feather.min.js-->
+        <script  src="assets/js/feather.min.js"></script>
+
+        <!-- counter js -->
+		<script src="assets/js/jquery.counterup.min.js"></script>
+		<script src="assets/js/waypoints.min.js"></script>
+
+        <!--slick.min.js-->
+        <script src="assets/js/slick.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+		     
+        <!--Custom JS-->
+        <script src="assets/js/custom.js"></script>
+        
+    </body>
+	
+</html>
+
